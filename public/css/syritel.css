@@ -1,0 +1,197 @@
+.vl{
+    border-left: 2px solid black;
+    height: 15px;margin-right: 15px;
+}
+.bg-model{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 ,0 , 0 ,0.7);
+    /* opacity: 0.7; */
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+
+
+}
+.bg-model1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 ,0 , 0 ,0.7);
+    /* opacity: 0.7; */
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+
+
+}
+.bg-model2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 ,0 , 0 ,0.7);
+    /* opacity: 0.7; */
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+
+
+}
+.bg-model3{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 ,0 , 0 ,0.7);
+    /* opacity: 0.7; */
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+
+
+}
+
+.model-content {
+    width: 500px;
+    height: 300px;
+    background-color: #eee;
+    /* z-index: -9; */
+    border-radius: 4px;
+    /* opacity: 1; */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    
+}
+
+.pop_mtn{
+    width: 45%;
+    display: inline-block;
+    margin: 15px auto;
+    /* width: 18rem; */
+    padding: .7rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    color: black;
+    border-bottom: 2px solid #ffce40;
+    /* margin-bottom: 1rem; */
+}
+
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+
+
+}
+.close1{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+
+
+}
+.close2{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+
+
+}
+.close3{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+
+
+}
+
+   .label_mtn{
+    width: 45%;
+display: inline-block;
+margin: 15px auto;
+/* width: 18rem; */
+padding: .7rem;
+border: none;
+border-radius: 5px;
+outline: none;
+font-size: 1rem;
+border-bottom: 2px solid #ffce40;
+background-color: white;
+   }
+  
+   .select_mtn{
+    width: 45%;
+display: inline-block;
+margin: 15px auto;
+/* width: 18rem; */
+padding: .7rem;
+border: none;
+border-radius: 5px;
+outline: none;
+font-size: 1rem;
+border-bottom: 2px solid #ffce40;
+
+}
+ 
+   .button-syr1{
+    width: 50%;
+    display: block;
+    padding: .7rem;
+    margin: 15px auto;
+    border-radius: 5px;
+    background-color: #ffce40;
+    color: #046390;
+    font-size: 20px;
+    font-weight: 900;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+
+
+
+}
+  
+.button-syr1:hover{
+    width: 50%;
+    display: block;
+    padding: .7rem;
+    margin: 15px auto;
+    border-radius: 5px;
+    background-color: #046390;
+    color: #ffce40 ;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+    border: none;
+
+    box-shadow: 0 2px 4px 0 #046390 ;
+    border-bottom: 4px solid #046390;
+
+}

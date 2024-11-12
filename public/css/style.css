@@ -1,0 +1,326 @@
+/* fonts */
+@font-face {font-family: "JF Flat Regular";
+    src:  url("7d411bb0357d6fd29347455b7d207995.eot"); /* IE9*/
+    src: url("../7d411bb0357d6fd29347455b7d207995.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("7d411bb0357d6fd29347455b7d207995.woff2") format("woff2"), /* chrome、firefox */
+    url("7d411bb0357d6fd29347455b7d207995.woff") format("woff"), /* chrome、firefox */
+    url("7d411bb0357d6fd29347455b7d207995.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("7d411bb0357d6fd29347455b7d207995.svg#JF Flat Regular") format("svg"); /* iOS 4.1- */
+  }
+  .ftxt{
+    font-family:"JF Flat Regular" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.Pcolor{
+    color: #3C5896;
+}
+
+    /* layout */
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    body{
+    font-family: "JF Flat Regular";
+    font-weight: 300;
+    background-image: url('../asset/images/background_image.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat , no-repeat;
+    overflow: hidden;
+}
+
+
+    h1,h2,h3,h4,h5,h6{
+        font-weight: 300;
+    }
+#wrapper{
+    display: flex;
+    flex-direction:row;
+}
+
+#left{
+flex:2;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+ #showcase{
+     flex: 1;
+    display: flex;
+    width: 80%;
+    background: white;
+    opacity: 0.6;
+    height: 100vh;
+    align-items: center;
+justify-content: center;
+
+
+}
+#right{
+    flex:1;
+}
+.flow{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    opacity: 0.92;
+    align-items: center;
+    justify-content: center;
+
+
+}
+#signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:80%;
+    /* padding-bottom: 1rem; */
+}
+#signin form{
+
+    align-content: center;
+    /* margin-top: 50vh; */
+    display: block;
+    /*width: 80%;*/
+    /* padding-bottom: 3rem; */
+    justify-content: center;
+    margin-left: 5rem;
+    margin-top: 4rem;
+
+
+}
+.logo{
+    margin-bottom: 8vh;
+     margin-right:500px;
+     margin-top: 50px;
+    /* width: 50%; */
+
+}
+ .logo img{
+    width: 300px;
+    /* margin-left: 200px; */
+
+}
+.title-form{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+}
+#signin .text-input {
+
+    width: 80%;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    background: #ffffff;
+    border: 2px solid #3C5896;
+    color : #3C5896;
+    padding: 0.5rem 2rem;
+    line-height: 1.1rem;
+    align-items: center;
+
+}
+#signin .text-input:focus {
+    /*display: block;*/
+    border:1px solid #ff6a14;
+    border-radius: 4px;
+    /*width: 80%;*/
+    /*margin-bottom: 1rem;*/
+    /*background: #ffffff;*/
+    /*line-height: 1.1rem;*/
+}
+#signin .text-input:focus-visible {
+    outline: none;
+    /*display: block;*/
+    border:2px solid #ff6a14;
+    border-radius: 4px;
+    /*width: 80%;*/
+    /*margin-bottom: 1rem;*/
+    /*background: #ffffff;*/
+    /*padding: 0.4rem 2rem;*/
+    /*line-height: 1.1rem;*/
+}
+/* Button */
+#signin .primary-btn {
+    width: 80%;
+    margin-right: 10% !important;
+}
+button{
+    background-color: #3C5896;
+}
+
+
+.btn {
+    border: none;
+    display: block;
+
+    padding: 0.4rem 1.0rem;
+    border-radius: 4px;
+    font-weight: 500;
+
+    /* --background-color:#3C5896; */
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+
+    background-color: #3C5896;
+    color: #fff;
+    /* padding: .5em 1em; */
+    border-right: 12px solid #ff6a14;
+    /* border-radius: 4px; */
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    /* --border-size: 8px; */
+    --accent-color: #ff6a14;
+  }
+  .btn.btn-background-slide{
+      border-radius: 4px;
+  }
+.btn.btn-background-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #ff6a14;
+    /* border-radius: 4px; */
+
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  .btn.btn-background-slide:hover::before,
+  .btn.btn-background-slide:focus::before {
+    transform: scaleX(1);
+  }
+  .btn.btn-background-slide {
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+  }
+  .btn.btn-background-slide:hover,
+  .btn.btn-background-slide:focus {
+    color: white;
+    background: #3C5896;
+  }
+
+/* forget password link */
+#signin .links a{
+    display: block;
+    margin-bottom: 1rem;
+    color:#828282;
+    font-size: 15;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+.forget{
+    margin-top: 1rem;
+}
+#signin .links a:hover{
+    color: #3C5896;
+}
+/* Need Help */
+#main-footer{
+    margin-top: 5rem;
+    margin-left: 5rem;
+
+
+}
+#main-footer a{
+    display: block;
+    color:  #828282 ;
+    font-size: 18;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+#main-footer a:hover{
+    display: block;
+    color:  #3C5896 ;
+
+
+}
+a .cmail{
+    color: #fff;
+}
+/* Media Queries */
+@media(min-width: 1200px){
+    #left{
+        flex:4
+    }
+    #right{
+        flex:6
+    }
+}
+@media(max-width: 768px ){
+   body{
+       margin: 0;
+       padding: 0;
+       overflow: auto;
+   }
+   body{
+       background-image: none;
+       /* display: none; */
+
+    }
+    #right{
+        display: none;
+    }
+    /* #left{
+        /* margin-top: 2vh; */
+        /* justify-content: start; */
+
+    #signin form{
+        /* margin-top: 50vh; */
+        display: block;
+        /* width: 90%; */
+        /* padding-bottom: 3rem; */
+        justify-content: center;
+        /* margin-left: 5rem; */
+        margin-top: 4rem;
+
+    }
+    form{
+        margin-right: 4rem;
+        padding: auto;
+    }
+    #signin .logo{
+
+
+        margin-bottom: 2vh;
+    }
+    #signin .text-input{
+        margin-bottom: 0.7rem;
+    }
+    #main-footer{
+        padding-top: 1rem;
+        margin-right: 4rem;
+
+    }
+    .btn.btn-background-slide:focus{
+        background-color: #ff6a14;
+    }
+    #main-footer{
+        margin-top: 0rem;
+    }
+   }
+   /* .shape {
+    background-color:red;
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50%;
+    float: left;
+    shape-outside: border-box;
+  } */
